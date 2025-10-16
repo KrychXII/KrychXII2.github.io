@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<head> 
+<title>obliczenie różnicy sekund między dniami w styczniu</title> 
+<meta charset="utf-8"> 
+</head> 
+<body>
+<div style="color:red;font-size:50px;">
+ <script language="JavaScript">
+var D1_deb=prompt("D1=","");
+var D2_deb=prompt("D2=","");
+var D1=parseFloat(D1_deb);
+var D2=parseFloat(D2_deb);
+var suma;
+if (D1>=D2) {
+    alert("D1 nie może być większe lub równe D2");
+}
+if (D1<=1 &&  D1>31 &&  D2<1 && D2>31) {
+    alert("Podaj dni z zakresu 1–31!");
+}
+suma = (D2 - D1) * 86400;
+document.write("D1 = "+D1+"<br>D2 = "+D2+"<br>Ilość sekund = "+suma+"<br>");
+</script>
+</div>
+</body>
+</html>
