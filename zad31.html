@@ -1,0 +1,30 @@
+<html> 
+     <head> 
+           <script type="text/javascript"> 
+                var wazon= { 
+                  kolor: 'brązowy', 
+                  material: 'szkło',
+                  wzor: 'fale',
+                  pokaz: function () { 
+                    document.write(this.kolor + ' ' + this.material+ ' ' + this.wzor) 
+                  } 
+                } 
+                wazon.pokaz(); 
+                wazon.wysokosc=30; 
+                wazon.wypisz=function(){alert('Wysokość: ' + this.wysokosc + 'cm')} 
+                wazon.wypisz(); 
+            </script> 
+     </head> 
+<body> 
+ <br> 
+   Programowanie obiektowe. <br> 
+    Obiekt  to  wazon<br> 
+     Pola:<br> 
+     kolor<br> 
+     materiał<br> 
+     wzor<br> 
+     metoda:  pokaz<br> 
+     nowe pole to wysoksc <br> 
+     nowa metoda to wypisz();<br> 
+</body> 
+</html>

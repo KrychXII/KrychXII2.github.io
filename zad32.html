@@ -1,0 +1,27 @@
+<html> 
+     <head> 
+           <script type="text/javascript"> 
+              function wazon(ksztalt_deb,wzor_deb,material_deb)//początek konstruktora 
+  { 
+   this.ksztalt=ksztalt_deb; 
+   this.wzor=wzor_deb; 
+   this.material=material_deb;   
+  }//koniec konstruktora 
+              wazon.prototype.wypisz = function () //definicja metody 
+      { 
+         alert(this.ksztalt + ' ' + this.wzor+ ' ' + this.material); 
+      }; 
+  var wazon1 = new wazon("owal", "fale", "szklo"); // nowy obiekt osoba1 
+  var wazon2 = new wazon('kwadrat', 'kratka', 'glina'); 
+  wazon1.wypisz(); // uruchomienie metody wypisz() dotyczącej osoby 1 
+  wazon2.wypisz(); 
+                document.write("dostęp do właściwości"+"<br>"); 
+// poniżej dostęp do pól osoby1 
+     document.write("wazon pierwszy"+"   ksztalt "+wazon1.ksztalt+"   wzor "+wazon1.wzor+"   material "+wazon1.material); 
+            </script> 
+     </head> 
+<body> 
+ <br> 
+   programowanie obiektowe   
+</body> 
+</html>
